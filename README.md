@@ -43,4 +43,4 @@ Once the `package` directory is available, build the final image:
 docker build -t nlknguyen/alpine-shellcheck .
 ```
 
-These are essentially the steps that Travis CI carry on before pushing the final image to Docker Hub
+These are essentially the steps that Travis CI carry on before pushing the final image to Docker Hub.
