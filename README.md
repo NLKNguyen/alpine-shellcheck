@@ -20,9 +20,9 @@ See the Docker Hub repository for more information.
 
 2 Dockerfiles
 
-- `builder/Dockerfile` is used to build shellcheck from source, which cloned from shellscheck GitHub repository, and collect output executable shellcheck binary and dependencies for easy retrieval. When it runs, the binaries will be copied out to the mounted directory.
+- `builder/Dockerfile` is used to build shellcheck from source, which is cloned from shellscheck GitHub repository, and collect executable shellcheck binary and object dependencies into a directory for easy retrieval. When it runs, the binaries will be copied out to the mounted directory.
 
-- `./Dockerfile` is used to build the image that is based on `alpine:latest` and contains only the neccessary binaries for shellcheck to run. It is intended for the image to be able to use as a `shellcheck` CLI program. `/mnt` is the designated mount point.
+- `./Dockerfile` is used to build the image that is based on `alpine:latest` and contains only the neccessary binaries for shellcheck to run. The entry point of the image is shellcheck program, and `/mnt` is the designated mount point when using this image as a CLI program.
 
 ## Build steps
 
