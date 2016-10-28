@@ -9,7 +9,7 @@ RUN mkdir -p /usr/src/shellcheck
 WORKDIR /usr/src/shellcheck
 
 RUN git clone https://github.com/koalaman/shellcheck .
-RUN git checkout v0.4.4
+RUN git checkout v0.4.5
 
 RUN cabal update && cabal install
 
